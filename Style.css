@@ -1,0 +1,78 @@
+body {
+
+
+
+
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.business-card {
+    width: 90%;
+    max-width: 350px;
+    background-image: url('481623629_623507764017652_507831698030950788_n.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    padding: 0 20px;
+}
+
+.card-content h1 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: black;
+}
+
+.card-content p {
+    margin: 10px 0;
+    color: black;
+}
+
+@media (max-width: 480px) {
+    .business-card {
+        width: 100%;
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card-content h1 {
+        font-size: 1.3em;
+    }
+
+    .card-content p {
+        font-size: 0.9em;
+    }
+}
